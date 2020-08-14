@@ -1,0 +1,169 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>DypStudentHub</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<!-- Custom Theme files -->
+<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!----font-Awesome----->
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!----font-Awesome----->
+<!----webfonts---->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<!----//webfonts---->
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+</head>
+<body>
+           
+           <div class="col-md-2 contact-left">
+          <h3><span> </span><a href="login.html"> Log in</a></h3>
+          </div>
+		<!----start-container---->
+			<!----start-header---->
+              
+		<div id="home" class="header scroll">
+			<div class="container">
+                           
+				<!---- start-logo---->
+				<div class="logo">
+					<a href="index.html"><img src="images/test2.png" title="DypStudentHub" /></a>
+				</div>
+				<!---- //End-logo---->
+				<!----start-top-nav---->
+				 <nav class="top-nav">
+					<ul class="top-nav">
+						<li class="active"><a href="#home" class="scroll">Home</a></li>
+						<li class="page-scroll"><a href="#fea" class="scroll">Features</a></li>
+ 
+                                               
+						
+					</ul>
+					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+                                        
+				</nav>
+				<div class="clearfix"> </div>
+				<div class="slide-text text-center">
+					<h1>Any Questions?</h1>
+					<span>For students,by students</span>
+					<a href="login.html">login</a>
+				</div>
+				<!----//End-top-nav---->
+			</div>
+		</div>
+		<!----//End-header---->
+		<!----start-feartures----->
+		<div id="fea" class="features">
+			<div class="container">
+				<div class="head text-center">
+					<h3><span> </span> Our Features</h3>
+					<p>DypStudentHub is an open community for anyone that codes. We help you get answers to your toughest coding questions, share knowledge with your friends, and increase your intelligence... </p>
+				</div>
+				<!---- start-features-grids---->
+				<div class="features-grids text-center">
+					<div class="col-md-6 features-grid">
+						<span class="fea-icon1"><i class="fa fa-star"> </i> </span>
+						<h3><a href="#">Public Q&A</a></h3>
+						<p>get answers from your frinds.</p>
+					</div>
+					<div class="col-md-6 features-grid">
+						<span class="fea-icon1"><i class="fa fa-thumbs-up"> </i> </span>
+						<h3><a href="#">Private Q&A</a></h3>
+						<p>make your question private and answered by experts.</p>
+                                                
+					</div>
+					
+				<!---- //End-features-grids---->
+			</div>
+		</div>
+		<!----//End-feartures----->
+		<!---- start-work---->
+		
+			<!----start-contact---->
+				<div id="contact" class="contact"> 
+				<div class="contact-grids">
+							<div class="col-md-6 contact-left">
+								<h3><span> </span> Contact</h3>
+								<p><i class="fa fa-map-marker"> </i> D. Y. Patil College of Engineering, D. Y. Patil
+Educational Complex, Sector 29, Nigdi
+Pradhikaran, Akurdi, Pune 411044.</p>
+								<form>
+									<input type="text" value="Name " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+									<input type="text" value="info@mail.com *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email@domain.com *';}">
+									<textarea onfocus="if(this.value == 'Message *') this.value='';" onblur="if(this.value == '') this.value='Message *;">Message *</textarea>
+									<p class="conditions"> <label><span>*</span>All fields are mandatory</label></p>
+									<span class="submit-btn"><input type="submit" value="Send"></span>
+								</form>
+							</div>
+							<div class="col-md-6 contact-right">
+						</div>
+							<div class="clearfix"> </div>
+						</div>
+				</div>
+			<!----//End-contact---->
+		<!----start-footer---->
+		<div class="footer">
+			<div class="container">
+				<div class="footer-left">
+					
+				</div>
+				<script type="text/javascript">
+				$(document).ready(function() {
+					/*
+					var defaults = {
+			  			containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+			 		};
+					*/
+					
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					
+				});
+			</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+			</div>
+		</div>
+		<!----//End-footer---->
+		<!----//End-container---->
+	</body>
+</html>
+
