@@ -1,13 +1,13 @@
-   var firebaseConfig = {
-    apiKey: "AIzaSyBpVU7oVna2WJK0pSIBzUtoDdlHaeEIkwM",
-    authDomain: "studenthub-698ce.firebaseapp.com",
-    databaseURL: "https://studenthub-698ce.firebaseio.com",
-    projectId: "studenthub-698ce",
-    storageBucket: "studenthub-698ce.appspot.com",
-    messagingSenderId: "175068655779",
-    appId: "1:175068655779:web:a69213dc07ff6325614f16",
-    measurementId: "G-K5TF78SQ6K"
+
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyDDCxLNj2ao3dUj5b9PcPSRkkCdBTp13bY",
+    authDomain: "dyp-student-hub.firebaseapp.com",
+    databaseURL: "https://dyp-student-hub.firebaseio.com",
+    projectId: "dyp-student-hub",
+    storageBucket: "dyp-student-hub.appspot.com",
+    messagingSenderId: "749539464019",
+    appId: "1:749539464019:web:056d8d9b7197554b7a07a6"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
