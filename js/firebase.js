@@ -1,9 +1,4 @@
- 
-var app_firebase = {};
-
- (function(){
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
+   var firebaseConfig = {
     apiKey: "AIzaSyBpVU7oVna2WJK0pSIBzUtoDdlHaeEIkwM",
     authDomain: "studenthub-698ce.firebaseapp.com",
     databaseURL: "https://studenthub-698ce.firebaseio.com",
@@ -16,6 +11,3 @@ var app_firebase = {};
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-
-  app_firebase = firebase;
-})()
