@@ -1,4 +1,4 @@
-(function(){
+
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
 
 var uiConfig = {
@@ -34,7 +34,6 @@ var uiConfig = {
 };
 
 ui.start('#firebaseui-auth-container', uiConfig);
-})()
 
 
 
