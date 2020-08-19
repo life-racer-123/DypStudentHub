@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>DypStudentHub</title>
+  
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+  
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+<script src="js/firebase.js"></script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<!-- Custom Theme files -->
+<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!----font-Awesome----->
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!----font-Awesome----->
+<!----webfonts---->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<!----//webfonts---->
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+                         
+		</script>
+  <script>
+  
+  </script>
+		<!----//End-top-nav-script---->
+</head>
+<body>
+<div class="col-md-6 contact-center">
+								<h3><span> </span> Contact</h3>
+								
+								<form action="https://life-racer-123.github.io/DypStudentHub/" method="post">
+									<input type="text" value="Username " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+									<input type="text" value="Password " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Pass';}">
+									<p class="conditions"> <label><span>*</span>All fields are mandatory</label></p>
+									<span class="submit-btn"><input type="submit" value="Sign In"></span>
+								</form>
+							</div>
+</body>
