@@ -1,77 +1,95 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>DypStudentHub</title>
-  
-<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-  
-<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
-<script src="js/firebase.js"></script>
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!---- start-smoth-scrolling---->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-<!---- start-smoth-scrolling---->
-<!-- Custom Theme files -->
-<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-</script>
-<!----font-Awesome----->
-<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
-<!----font-Awesome----->
-<!----webfonts---->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-<!----//webfonts---->
-<!----start-top-nav-script---->
-		<script>
-			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-	    		});
-			});
-                         
-		</script>
-  <script>
-  
-  </script>
-		<!----//End-top-nav-script---->
+Result Size: 945 x 765
+
+  margin: 8px 0;
+
+  border: none;
+
+  cursor: pointer;
+
+  width: 100%;
+
+  opacity: 0.9;
+
+}
+
+
+
+.registerbtn:hover {
+
+  opacity: 1;
+
+}
+
+/* Add a blue text color to links */
+
+a {
+
+  color: dodgerblue;
+
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+
+.signin {
+
+  background-color: #f1f1f1;
+
+  text-align: center;
+
+}
+
+</style>
+
 </head>
+
 <body>
-<div class="col-md-6 contact-center">
-								<h3><span> </span> Contact</h3>
-								
-								<form action="login.html" method="post">
-									<input type="text" value="Username " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-									<input type="text" value="info@mail.com *" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email@domain.com *';}">
-									<input type="text" value="Password " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Pass';}">
-									<p class="conditions"> <label><span>*</span>All fields are mandatory</label></p>
-									<span class="submit-btn"><input type="submit" value="Sign Up"></span>
-								</form>
-							</div>
+
+
+<form action="/action_page.php">
+
+  <div class="container">
+
+    <h1>Register</h1>
+
+    <p>Please fill in this form to create an account.</p>
+
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+
+
+    <label for="psw"><b>Password</b></label>
+
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+
+    <hr>
+
+   
+
+    <button type="submit" class="registerbtn">Register</button>
+
+  </div>
+
+  
+
+  <div class="container signin">
+
+    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+
+  </div>
+
+</form>
+
 </body>
+
+</html>
+
+
